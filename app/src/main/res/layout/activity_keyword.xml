@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spaceBlack"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="com.example.denny_pc.dongeng.KeywordActivity">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtLay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white">
+
+                <EditText
+                    android:id="@+id/txtNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:hint="Nama"
+                    android:textColor="@color/white"/>
+            </android.support.design.widget.TextInputLayout>
+            <!-- Layout Cinderella-->
+            <RelativeLayout
+                android:id="@+id/layCinder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtLay1"
+                android:visibility="invisible">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtCAngka"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Angka"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay2"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtCJam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Jam"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay3"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtCKerja"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Kata Kerja"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay4"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtCProf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtCKerja"
+                        android:textColor="@color/white"
+                        android:hint="Profesi/Jabatan/Nama Orang"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay5"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtCNamaOrg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:hint="Nama Orang"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay6"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtCTrans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:hint="Alat Transportasi"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay7"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtCPakaian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:hint="Jenis Pakaian"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay8"
+                    android:textColorHint="@color/white">
+                <EditText
+                    android:id="@+id/txtCGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtCPakaian"
+                    android:hint="Nama Game"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <!-- Layout Tarzan-->
+            <RelativeLayout
+                android:id="@+id/layTarzan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtLay1"
+                android:visibility="invisible">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtTNegara"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama Negara"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay10"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtTHewan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama Hewan"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay11"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtTWarna"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Warna"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay12"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtTNamaOrang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTWarna"
+                        android:textColor="@color/white"
+                        android:hint="Profesi/Jabatan/Nama Orang"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay13"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtTNamaMknan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:hint="Nama Makanan"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay14"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtTNamaNgr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:hint="Nama Negara"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay15"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtTNamaBenda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:hint="Nama Benda"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtLay17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLay16"
+                android:textColorHint="@color/white">
+                <EditText
+                    android:id="@+id/txtTNamaProf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtCPakaian"
+                    android:hint="Nama Profesi"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay17"
+                    android:textColorHint="@color/white">
+                    <EditText
+                        android:id="@+id/txtTAngka"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtCPakaian"
+                        android:hint="Angka"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay18"
+                    android:textColorHint="@color/white">
+                    <EditText
+                        android:id="@+id/txtTAcaraTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtCPakaian"
+                        android:hint="Acara Tv"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <!-- Layout Superman-->
+            <RelativeLayout
+                android:id="@+id/laySupes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtLay1"
+                android:visibility="visible">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtSBenda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama Benda"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay20"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtSMakanan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama Makanan"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay21"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtSTransportasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Alat Transportasi"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay22"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtSNegara"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtSTransportasi"
+                        android:textColor="@color/white"
+                        android:hint="Nama Negara"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay23"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtSTempat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:hint="Nama Tempat"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay24"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtSSifat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:hint="Sifat Manusia"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtLay26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtLay25"
+                    android:textColorHint="@color/white">
+
+                    <EditText
+                        android:id="@+id/txtSMajalah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:hint="Nama Majalah"
+                        android:textColorHint="@color/white" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GENERATE"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btnGenerate"
+                android:onClick="Generate"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

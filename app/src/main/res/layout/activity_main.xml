@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/spaceBlack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.denny_pc.dongeng.MainActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/back"
+                android:id="@+id/coverImg"
+                />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/coverImg"
+                android:background="@drawable/cinderella"
+                android:id="@+id/btnCinder"
+                android:onClick="btnCinder"
+                />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/btnCinder"
+                android:background="@drawable/tarzan"
+                android:id="@+id/btnTarzan"
+                android:onClick="btnTarzan"
+                />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/btnTarzan"
+                android:background="@drawable/superman"
+                android:id="@+id/btnSuperman"
+                android:onClick="btnSuperman"
+                />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/btnSuperman"
+                android:background="@drawable/credits"
+                android:id="@+id/btnCredit"
+                android:onClick="btnCredit"
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

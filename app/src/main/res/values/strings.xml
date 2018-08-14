@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dongeng</string>
+    <string name="aplikasi">Aplikasi ini berisi Dongeng yang belum lengkap</string>
+    <string name="tentang">Pembuat</string>
+       <string name="pembuat1">Denny Eko S / 311210011</string>
+        <string name="pembuat2">Muhammad Risaldy / 311210029</string>
+        <string name="pembuat3">Yusuf Surya / 311110051</string>
+</resources>
